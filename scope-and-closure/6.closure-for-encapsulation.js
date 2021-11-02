@@ -8,35 +8,42 @@
 // fresher.age = -1
 // console.info(fresher) // ! Can me accessed
 
-// // ? The new - cooler way
-// function createFresher(name, age, isMale) {
-//     const fresher = {
-//         name: name,
-//         age: age,
-//         isMale: isMale
-//     }
+// ? The new - cooler way
+function createFresher(name, age, isMale) {
+    const fresher = {
+        name: name,
+        age: age,
+        isMale: isMale
+    }
 
-//     return {
-//         getName() {
-//             return fresher.name
-//         },
-//         setName(name) {
-//             fresher.name = name
-//         },
-//         getIsMale() {
-//             return fresher.isMale
-//         },
-//         setIsMale(isMale) {
-//             fresher.isMale = isMale
-//         },
-//         getAge () {
-//             return fresher.age
-//         }
-//     }
-// }
+    return {
+        getName() {
+            return fresher.name
+        },
+        setName(name) {
+            fresher.name = name
 
-// const coolerFresher = createFresher('Name', 21, true)
-// coolerFresher.setName('Name...!')
-// console.info(coolerFresher.getName())
+            // * TODO: Fix this function to prevent setting name to a value
+            // * that is not a string,
+            // * or an empty string
+        },
+        getIsMale() {
+            return fresher.isMale
+        },
+        setIsMale(isMale) {
+            fresher.isMale = isMale
 
-// console.info(coolerFresher.getAge())
+            // * TODO: Fix this function to prevent setting isMale to a value
+            // * that is NOT a boolean
+        },
+        getAge () {
+            return fresher.age
+        }
+    }
+}
+
+const coolerFresher = createFresher('Name', 21, true)
+coolerFresher.setName('Name...!')
+console.info(coolerFresher.getName())
+
+console.info(coolerFresher.getAge())

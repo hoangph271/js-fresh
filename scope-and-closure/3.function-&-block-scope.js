@@ -19,3 +19,9 @@ function blockScopeGretting () {
     // console.info(age)
     // console.info(isMale)
 }
+
+// * TODO: In the blockScopeGretting () example
+// * what is the
+// `if (true) {`
+// * block is changed into
+// `if (false) {`
